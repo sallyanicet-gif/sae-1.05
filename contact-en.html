@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MARËIS: contact form, membership request, volunteer registration. Marine protection association in Guadeloupe.">
+    <title>Contact | MARËIS - Marine Protection in Guadeloupe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <a href="index-en.html" aria-label="MARËIS - Back to homepage">MARËIS</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="a-propos-en.html">About</a></li>
+                <li><a href="nos-actions-en.html">Our actions</a></li>
+                <li><a href="informations-en.html">Practical info</a></li>
+                <li><a href="contact-en.html">Contact</a></li>
+            </ul>
+            <div class="nav-lang">
+                <a href="contact.html" lang="fr" aria-label="Switch to French version">FR</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Change theme">
+                <span class="theme-icon-light" aria-hidden="true">🌙</span>
+                <span class="theme-icon-dark" aria-hidden="true">☀️</span>
+            </button>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+                <h1 id="page-title">Contact us</h1>
+                <p class="page-hero-subtitle">Have a question? Want to join us? Write to us!</p>
+            </div>
+        </div>
+        <div class="page-hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-form-title">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <h2 id="contact-form-title">Send us a message</h2>
+                    <p>Fill out the form below and we will respond as soon as possible.</p>
+                    
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="nom">Full name <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="nom" name="nom" required autocomplete="name" aria-required="true" placeholder="Your first and last name">
+                            <span class="form-hint">Example: John Smith</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" aria-describedby="email-hint" placeholder="your@email.com">
+                            <span class="form-hint" id="email-hint">We will never share your email.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Phone</label>
+                            <input type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="0590 XX XX XX" aria-describedby="tel-hint">
+                            <span class="form-hint" id="tel-hint">Optional - to contact you more quickly.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Subject <span class="required" aria-hidden="true">*</span></label>
+                            <select id="sujet" name="sujet" required aria-required="true">
+                                <option value="">-- Choose a subject --</option>
+                                <option value="information">Information request</option>
+                                <option value="benevole" id="benevole">Become a volunteer</option>
+                                <option value="adhesion" id="adhesion">Join the association</option>
+                                <option value="don" id="don">Make a donation</option>
+                                <option value="partenariat">Partnership proposal</option>
+                                <option value="intervention">School workshop request</option>
+                                <option value="presse">Press contact</option>
+                                <option value="autre">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your message <span class="required" aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Describe your request or ask your question..."></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true">
+                            <label for="rgpd">I agree that my data will be processed by MARËIS to respond to my request. <span class="required" aria-hidden="true">*</span> <a href="#mentions" class="form-link">See legal notices</a></label>
+                        </div>
+                        
+                        <p class="form-required-note"><span class="required" aria-hidden="true">*</span> Required fields</p>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">Send my message</button>
+                    </form>
+                </div>
+                
+                <aside class="contact-info-sidebar">
+                    <div class="contact-card">
+                        <h3>Contact details</h3>
+                        <address>
+                            <p><strong>MARËIS</strong></p>
+                            <p>12 rue des Palétuviers</p>
+                            <p>97180 Sainte-Anne</p>
+                            <p>Guadeloupe</p>
+                        </address>
+                        <div class="contact-methods">
+                            <p><span class="contact-icon" aria-hidden="true">📧</span> <a href="mailto:contact@mareis.gp">contact@mareis.gp</a></p>
+                            <p><span class="contact-icon" aria-hidden="true">📞</span> <a href="tel:+0590509510">0590509510</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Opening hours</h3>
+                        <p>Tuesday - Friday</p>
+                        <p><strong>9:00 AM - 12:00 PM / 2:00 PM - 5:00 PM</strong></p>
+                        <p class="contact-note">Closed Monday and weekends</p>
+                    </div>
+                    
+                    <div class="contact-card social-card">
+                        <h3>Follow us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                Facebook
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                Instagram
+                            </a>
+                            <a href="#" aria-label="YouTube" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg>
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentions" class="legal-section" aria-labelledby="mentions-title">
+        <div class="container">
+            <div class="legal-content">
+                <h2 id="mentions-title">Legal notices</h2>
+                
+                <article class="legal-block">
+                    <h3>Website publisher</h3>
+                    <p><strong>MARËIS</strong> - Non-profit association (French law 1901)</p>
+                    <p>Headquarters: 12 rue des Palétuviers, 97180 Sainte-Anne, Guadeloupe</p>
+                    <p>Email: <a href="mailto:contact@mareis.gp">contact@mareis.gp</a></p>
+                    <p>Publication director: Marie-Line Dubois, President</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Hosting</h3>
+                    <p>This website is hosted by GitHub Pages</p>
+                    <p>GitHub, Inc. - 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Intellectual property</h3>
+                    <p>All content on this website (texts, images, videos, logos) is the exclusive property of MARËIS or its partners. Any reproduction without prior authorization is prohibited.</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Personal data protection</h3>
+                    <p>In accordance with the GDPR, you have the right to access, rectify, delete and object to personal data concerning you.</p>
+                    <p>Data collected via the contact form is only used to respond to your requests and is never shared with third parties.</p>
+                    <p>To exercise your rights, contact us at: <a href="mailto:contact@mareis.gp">contact@mareis.gp</a></p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Cookies</h3>
+                    <p>This website does not use tracking or advertising cookies. Only technical cookies essential for the website's operation may be used.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="credits-section" aria-labelledby="credits-title">
+        <div class="container">
+            <div class="credits-content">
+                <h2 id="credits-title">Credits</h2>
+                <div class="credits-grid">
+                    <article class="credit-block">
+                        <h3>Design and development</h3>
+                        <p>Website created as part of SAE 1.05 - BUT MMI</p>
+                        <p>University of the Antilles - Guadeloupe Campus</p>
+                        <p>Academic year 2024-2025</p>
+                    </article>
+                    <article class="credit-block">
+                        <h3>Photography</h3>
+                        <p>Royalty-free images from:</p>
+                        <ul><li>Unsplash.com</li><li>Pexels.com</li><li>MARËIS archives (fictional)</li></ul>
+                    </article>
+                    <article class="credit-block">
+                        <h3>Typography</h3>
+                        <p>Google Fonts:</p>
+                        <ul><li>Playfair Display - Headings</li><li>Raleway - Body text</li></ul>
+                    </article>
+                    <article class="credit-block">
+                        <h3>Technologies used</h3>
+                        <ul><li>HTML5</li><li>CSS3 (Flexbox, Grid, Variables)</li><li>Vanilla JavaScript</li></ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>MARËIS</h3>
+                    <p>Guadeloupean environmental association for marine protection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Follow us on Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Follow us on Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="Watch our videos on YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="a-propos-en.html">About</a></li>
+                        <li><a href="nos-actions-en.html">Our actions</a></li>
+                        <li><a href="informations-en.html">Practical info</a></li>
+                        <li><a href="contact-en.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Take action</h4>
+                    <ul>
+                        <li><a href="contact-en.html#benevole">Become a volunteer</a></li>
+                        <li><a href="contact-en.html#adhesion">Join us</a></li>
+                        <li><a href="contact-en.html#don">Make a donation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><span aria-hidden="true">📍</span> Guadeloupe, French West Indies</p>
+                    <p><span aria-hidden="true">📧</span> <a href="mailto:contact@mareis.gp">contact@mareis.gp</a></p>
+                    <p><span aria-hidden="true">📞</span> <a href="tel:+0590509510">0590509510</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MARËIS - All rights reserved</p>
+                <div class="footer-legal">
+                    <a href="contact-en.html#mentions">Legal notices</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="contact.html">Français</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

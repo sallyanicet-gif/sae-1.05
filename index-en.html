@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MARËIS - Environmental association from Guadeloupe dedicated to the protection of marine wildlife and flora in the Caribbean.">
+    <title>MARËIS | Marine Protection in Guadeloupe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <a href="index-en.html" aria-label="MARËIS - Back to homepage">MARËIS</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="a-propos-en.html">About</a></li>
+                <li><a href="nos-actions-en.html">Our actions</a></li>
+                <li><a href="informations-en.html">Practical info</a></li>
+                <li><a href="contact-en.html">Contact</a></li>
+            </ul>
+            <div class="nav-lang">
+                <a href="index.html" lang="fr" aria-label="Switch to French version">FR</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Change theme">
+                <span class="theme-icon-light" aria-hidden="true">🌙</span>
+                <span class="theme-icon-dark" aria-hidden="true">☀️</span>
+            </button>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Let's protect the <span>marine treasures</span> of Guadeloupe together</h1>
+            <p class="hero-subtitle">Environmental association dedicated to the preservation of Caribbean marine wildlife and flora</p>
+            <div class="hero-cta">
+                <a href="contact-en.html#adhesion" class="btn btn-primary">Join the adventure</a>
+                <a href="nos-actions-en.html" class="btn btn-secondary">Discover our actions</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section class="about-preview" id="presentation" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-content">
+                <span class="section-tag">Who we are</span>
+                <h2 id="about-title">A mission at the heart of the Caribbean</h2>
+                <p>MARËIS is a Guadeloupean association committed to protecting the Caribbean marine ecosystem. We work to preserve sea turtles, coral reefs, mangroves, and all the biodiversity that enriches our Caribbean waters.</p>
+                <p>Our mission: to raise awareness, protect, and take action so that future generations can still admire the wonders of our seabed.</p>
+                <a href="a-propos-en.html" class="link-arrow">Learn more about our story →</a>
+            </div>
+            <div class="about-image">
+                <div class="image-frame">
+                    <img src="Images/Tortue marine.jpg" alt="Sea turtle in the waters of Guadeloupe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Our Actions -->
+    <section class="actions" aria-labelledby="actions-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our actions</span>
+                <h2 id="actions-title">Together, let's act for the ocean</h2>
+            </div>
+            <div class="actions-grid">
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="32" cy="32" r="28"/>
+                            <path d="M32 18v28M18 32h28"/>
+                        </svg>
+                    </div>
+                    <h3>Awareness</h3>
+                    <p>Educational workshops in schools, public events and communication campaigns to raise consciousness.</p>
+                </article>
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 44c0-8 6-12 12-12s12 4 12 12"/>
+                            <circle cx="32" cy="24" r="8"/>
+                            <path d="M12 52h40"/>
+                        </svg>
+                    </div>
+                    <h3>Clean-ups</h3>
+                    <p>Regular beach and seabed cleaning operations to fight against plastic pollution.</p>
+                </article>
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="32" cy="36" rx="20" ry="12"/>
+                            <circle cx="26" cy="34" r="3"/>
+                            <path d="M32 24c-4-8-16-8-16 4"/>
+                            <path d="M32 24c4-8 16-8 16 4"/>
+                        </svg>
+                    </div>
+                    <h3>Observation</h3>
+                    <p>Discovery trips to observe turtles, corals and marine life in their natural habitat.</p>
+                </article>
+            </div>
+            <div class="actions-cta">
+                <a href="nos-actions-en.html" class="btn btn-primary">Discover all our actions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Key Figures -->
+    <section class="stats" aria-label="Key figures of the association">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Active volunteers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Clean-ups per year</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2000</span>
+                    <span class="stat-label">Kg of waste collected</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Students reached</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Take Action -->
+    <section class="join-us" aria-labelledby="join-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Take action</span>
+                <h2 id="join-title">Become an agent of change</h2>
+            </div>
+            <div class="join-grid">
+                <div class="join-card join-volunteer">
+                    <div class="join-card-content">
+                        <h3>Become a volunteer</h3>
+                        <p>Participate in our actions on the ground: clean-ups, awareness, observation... Every action counts!</p>
+                        <a href="contact-en.html#benevole" class="btn btn-white">I become a volunteer</a>
+                    </div>
+                </div>
+                <div class="join-card join-member">
+                    <div class="join-card-content">
+                        <h3>Become a member</h3>
+                        <p>Support our association and enjoy exclusive benefits: trips, newsletter, members-only events.</p>
+                        <a href="contact-en.html#adhesion" class="btn btn-white">I join the association</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section News -->
+    <section class="news" aria-labelledby="news-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">News</span>
+                <h2 id="news-title">Latest news</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="Images/Nettoyage de la plage.jpg" alt="Beach clean-up">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">January 15, 2025</span>
+                        <h3>Large clean-up operation in Sainte-Anne</h3>
+                        <p>Join us for our first action of the year on La Caravelle beach.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="Images/Tortue en pontes.jpg" alt="Turtle nesting">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">January 8, 2025</span>
+                        <h3>Nesting season: how can you help?</h3>
+                        <p>The turtle nesting season is approaching. Discover the gestures to adopt.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!-- End of main content -->
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>MARËIS</h3>
+                    <p>Guadeloupean environmental association for marine protection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="a-propos-en.html">About</a></li>
+                        <li><a href="nos-actions-en.html">Our actions</a></li>
+                        <li><a href="informations-en.html">Practical info</a></li>
+                        <li><a href="contact-en.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Take action</h4>
+                    <ul>
+                        <li><a href="contact-en.html#benevole">Become a volunteer</a></li>
+                        <li><a href="contact-en.html#adhesion">Join us</a></li>
+                        <li><a href="contact-en.html#don">Make a donation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📍 Guadeloupe, French West Indies</p>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection#03606c6d77626077436e6271666a702e6270706c2d6571"><span class="__cf_email__" data-cfemail="99faf6f7edf8faedd9f4f8ebfcf0eab4f8eaeaf6b7ffeb">[email&#160;protected]</span></a></p>
+                    <p>📞 0590509510</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MARËIS - All rights reserved</p>
+                <div class="footer-legal">
+                    <a href="contact-en.html#mentions">Legal notices</a>
+                    <span>|</span>
+                    <a href="index.html">Français</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
