@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MARËIS - Association environnementale guadeloupéenne dédiée à la protection de la faune et flore marine des Antilles">
+    <title>MARËIS | Protection Marine en Guadeloupe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lien d'évitement pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="MARËIS - Retour à l'accueil">MARËIS</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="nos-actions.html">Nos actions</a></li>
+                <li><a href="informations.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-lang">
+                <a href="index-en.html" lang="en" aria-label="Switch to English version">EN</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Activer le mode sombre" title="Changer de thème">
+                <span class="theme-icon-light" aria-hidden="true">🌙</span>
+                <span class="theme-icon-dark" aria-hidden="true">☀️</span>
+            </button>
+            <button class="nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Protégeons ensemble les <span>trésors marins</span> de la Guadeloupe</h1>
+            <p class="hero-subtitle">Association environnementale dédiée à la préservation de la faune et flore marine des Antilles</p>
+            <div class="hero-cta">
+                <a href="contact.html#adhesion" class="btn btn-primary">Rejoignez l'aventure</a>
+                <a href="nos-actions.html" class="btn btn-secondary">Découvrir nos actions</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section Qui sommes-nous -->
+    <section class="about-preview" id="presentation" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-content">
+                <span class="section-tag">Qui sommes-nous</span>
+                <h2 id="about-title">Une mission au cœur des Caraïbes</h2>
+                <p>MARËIS est une association guadeloupéenne engagée dans la protection de l'écosystème marin antillais. Nous œuvrons pour la préservation des tortues marines, des récifs coralliens, de la mangrove et de toute la biodiversité qui fait la richesse de nos eaux caribéennes.</p>
+                <p>Notre mission : sensibiliser, protéger et agir pour que les générations futures puissent encore admirer les merveilles de nos fonds marins.</p>
+                <a href="a-propos.html" class="link-arrow">En savoir plus sur notre histoire →</a>
+            </div>
+            <div class="about-image">
+                <div class="image-frame">
+                    <img src="Images/Tortue marine.jpg" alt="Tortue marine dans les eaux de Guadeloupe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Actions -->
+    <section class="actions" aria-labelledby="actions-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos actions</span>
+                <h2 id="actions-title">Ensemble, agissons pour l'océan</h2>
+            </div>
+            <div class="actions-grid">
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="32" cy="32" r="28"/>
+                            <path d="M32 18v28M18 32h28"/>
+                        </svg>
+                    </div>
+                    <h3>Sensibilisation</h3>
+                    <p>Ateliers pédagogiques dans les écoles, événements grand public et campagnes de communication pour éveiller les consciences.</p>
+                </article>
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 44c0-8 6-12 12-12s12 4 12 12"/>
+                            <circle cx="32" cy="24" r="8"/>
+                            <path d="M12 52h40"/>
+                        </svg>
+                    </div>
+                    <h3>Nettoyages</h3>
+                    <p>Opérations régulières de nettoyage des plages et des fonds marins pour lutter contre la pollution plastique.</p>
+                </article>
+                <article class="action-card">
+                    <div class="action-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="32" cy="36" rx="20" ry="12"/>
+                            <circle cx="26" cy="34" r="3"/>
+                            <path d="M32 24c-4-8-16-8-16 4"/>
+                            <path d="M32 24c4-8 16-8 16 4"/>
+                        </svg>
+                    </div>
+                    <h3>Observation</h3>
+                    <p>Sorties découverte pour observer les tortues, les coraux et la vie marine dans leur habitat naturel.</p>
+                </article>
+            </div>
+            <div class="actions-cta">
+                <a href="nos-actions.html" class="btn btn-primary">Découvrir toutes nos actions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Chiffres clés -->
+    <section class="stats" aria-label="Chiffres clés de l'association">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Bénévoles actifs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Nettoyages par an</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2000</span>
+                    <span class="stat-label">Kg de déchets collectés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Élèves sensibilisés</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Agir avec nous -->
+    <section class="join-us" aria-labelledby="join-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Agir avec nous</span>
+                <h2 id="join-title">Devenez acteur du changement</h2>
+            </div>
+            <div class="join-grid">
+                <div class="join-card join-volunteer">
+                    <div class="join-card-content">
+                        <h3>Devenir bénévole</h3>
+                        <p>Participez à nos actions sur le terrain : nettoyages, sensibilisation, observation... Chaque geste compte !</p>
+                        <a href="contact.html#benevole" class="btn btn-white">Je deviens bénévole</a>
+                    </div>
+                </div>
+                <div class="join-card join-member">
+                    <div class="join-card-content">
+                        <h3>Devenir adhérent</h3>
+                        <p>Soutenez notre association et bénéficiez d'avantages exclusifs : sorties, newsletter, événements réservés aux membres.</p>
+                        <a href="contact.html#adhesion" class="btn btn-white">J'adhère à l'association</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section class="news" aria-labelledby="news-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Actualités</span>
+                <h2 id="news-title">Les dernières nouvelles</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="Images/Nettoyage de la plage.jpg" alt="Nettoyage de plage">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 Janvier 2025</span>
+                        <h3>Grande opération nettoyage à Sainte-Anne</h3>
+                        <p>Rejoignez-nous pour notre première action de l'année sur la plage de la Caravelle.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="Images/Tortue en pontes.jpg" alt="Tortue en ponte">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">8 Janvier 2025</span>
+                        <h3>Saison des pontes : comment aider ?</h3>
+                        <p>La saison des pontes de tortues approche. Découvrez les gestes à adopter.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>MARËIS</h3>
+                    <p>Association environnementale guadeloupéenne pour la protection marine.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="nos-actions.html">Nos actions</a></li>
+                        <li><a href="informations.html">Infos pratiques</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Agir</h4>
+                    <ul>
+                        <li><a href="contact.html#benevole">Devenir bénévole</a></li>
+                        <li><a href="contact.html#adhesion">Adhérer</a></li>
+                        <li><a href="contact.html#don">Faire un don</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📍 Guadeloupe, Antilles françaises</p>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6704080913060413270a0615020e144a06141408490115">[email&#160;protected]</a></p>
+                    <p>📞 0590509510</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MARËIS - Tous droits réservés</p>
+                <div class="footer-legal">
+                    <a href="contact.html#mentions">Mentions légales</a>
+                    <span>|</span>
+                    <a href="index-en.html">English</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+/* ===================================
+   MARËIS - JavaScript
+   Theme persistence & Navigation
+   =================================== */
+
+// ===================================
+// IMMEDIATELY: Apply theme BEFORE DOM loads (no flash)
+// ===================================
+(function() {
+    // Get saved theme from BOTH possible keys (for compatibility)
+    const savedTheme = localStorage.getItem('mareis-theme') || localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const themeToApply = savedTheme || (prefersDark ? 'dark' : 'light');
+    
+    // Apply theme immediately to prevent flash
+    document.documentElement.setAttribute('data-theme', themeToApply);
+    
+    // Save with both keys for compatibility
+    localStorage.setItem('mareis-theme', themeToApply);
+    localStorage.setItem('theme', themeToApply);
+})();
+
+// ===================================
+// Wait for DOM
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+    
+    console.log('DOM loaded - MARËIS script starting');
+    
+    // ===================================
+    // Theme Toggle - Dark/Light Mode
+    // ===================================
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    console.log('Theme toggle button found:', !!themeToggle);
+    
+    if (themeToggle) {
+        // Update button label based on current theme
+        const updateThemeLabel = function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const isEnglish = document.documentElement.lang === 'en';
+            
+            if (currentTheme === 'dark') {
+                themeToggle.setAttribute('aria-label', isEnglish ? 'Switch to light mode' : 'Activer le mode clair');
+            } else {
+                themeToggle.setAttribute('aria-label', isEnglish ? 'Switch to dark mode' : 'Activer le mode sombre');
+            }
+        };
+        
+        // Set initial label
+        updateThemeLabel();
+        
+        // Handle click
+        themeToggle.addEventListener('click', function(e) {
+            console.log('Theme toggle clicked!');
+            
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            console.log('Changing theme from', currentTheme, 'to', newTheme);
+            
+            // Apply new theme
+            document.documentElement.setAttribute('data-theme', newTheme);
+            
+            // Save to localStorage with BOTH keys
+            localStorage.setItem('mareis-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update label
+            updateThemeLabel();
+            
+            console.log('Theme changed successfully to:', newTheme);
+        });
+        
+        console.log('Theme toggle event listener attached');
+    } else {
+        console.error('Theme toggle button NOT FOUND!');
+    }
+    
+    // ===================================
+    // Active Navigation Link
+    // ===================================
+    const setActiveNavLink = function() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        console.log('Current page:', currentPage);
+        
+        navLinks.forEach(link => {
+            // Remove existing active class
+            link.classList.remove('active');
+            link.removeAttribute('aria-current');
+            
+            // Get the href filename
+            const linkPage = link.getAttribute('href').split('/').pop();
+            
+            // Check if this link matches current page
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+                console.log('Active link set:', linkPage);
+            }
+        });
+    };
+    
+    // Set active link on page load
+    setActiveNavLink();
+    
+    // ===================================
+    // Mobile Navigation Toggle
+    // ===================================
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            
+            const isActive = navLinks.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isActive);
+            
+            // Burger animation
+            const spans = navToggle.querySelectorAll('span');
+            spans.forEach((span, index) => {
+                if (isActive) {
+                    if (index === 0) span.style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    if (index === 1) span.style.opacity = '0';
+                    if (index === 2) span.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                } else {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                }
+            });
+        });
+        
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                
+                const spans = navToggle.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+            });
+        });
+    }
+    
+    // ===================================
+    // Header Shadow on Scroll
+    // ===================================
+    const header = document.querySelector('.header');
+    
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(10, 61, 92, 0.15)';
+            } else {
+                header.style.boxShadow = '0 4px 20px rgba(10, 61, 92, 0.1)';
+            }
+        });
+    }
+    
+    // ===================================
+    // Scroll Animations (Intersection Observer)
+    // ===================================
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.action-card, .stat-item, .join-card, .news-card, .about-content, .about-image, .value-card, .context-card, .team-card, .program-card, .event-card, .hours-card, .pricing-card, .faq-item, .contact-card');
+        
+        if (elements.length === 0) return;
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        elements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    };
+    
+    animateOnScroll();
+    
+    // ===================================
+    // Number Counter Animation
+    // ===================================
+    const animateNumbers = function() {
+        const numbers = document.querySelectorAll('.stat-number');
+        
+        if (numbers.length === 0) return;
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalNumber = parseInt(target.textContent.replace(/\D/g, ''));
+                    const suffix = target.textContent.replace(/[0-9]/g, '');
+                    let current = 0;
+                    const increment = finalNumber / 50;
+                    const stepTime = 40;
+                    
+                    const counter = setInterval(() => {
+                        current += increment;
+                        if (current >= finalNumber) {
+                            target.textContent = finalNumber + suffix;
+                            clearInterval(counter);
+                        } else {
+                            target.textContent = Math.floor(current) + suffix;
+                        }
+                    }, stepTime);
+                    
+                    observer.unobserve(target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        numbers.forEach(num => observer.observe(num));
+    };
+    
+    animateNumbers();
+    
+    // ===================================
+    // Smooth Scroll for Anchors
+    // ===================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // ===================================
+    // Hero Parallax Effect
+    // ===================================
+    const hero = document.querySelector('.hero');
+    
+    if (hero) {
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroContent = document.querySelector('.hero-content');
+            
+            if (heroContent && scrolled < window.innerHeight) {
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                heroContent.style.opacity = 1 - (scrolled / (window.innerHeight * 0.8));
+            }
+        });
+    }
+    
+    // ===================================
+    // Contact Form Handling
+    // ===================================
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('error');
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            // Email validation
+            const emailField = this.querySelector('input[type="email"]');
+            if (emailField && emailField.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailField.value)) {
+                    isValid = false;
+                    emailField.classList.add('error');
+                }
+            }
+            
+            if (isValid) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                const isEnglish = document.documentElement.lang === 'en';
+                
+                submitBtn.textContent = isEnglish ? 'Sending...' : 'Envoi en cours...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    const message = isEnglish 
+                        ? 'Thank you for your message! We will respond as soon as possible.'
+                        : 'Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.';
+                    alert(message);
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 1500);
+            }
+        });
+    }
+    
+    // ===================================
+    // FAQ Accordion (if present)
+    // ===================================
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', function() {
+                const isOpen = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't open
+                if (!isOpen) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+    
+    // ===================================
+    // Tabs Navigation (Nos Actions page)
+    // ===================================
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    
+    if (tabButtons.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                // Update buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+                
+                // Update panels
+                tabPanels.forEach(panel => {
+                    panel.classList.remove('active');
+                    panel.setAttribute('hidden', '');
+                });
+                
+                const targetPanel = document.getElementById(targetTab);
+                if (targetPanel) {
+                    targetPanel.classList.add('active');
+                    targetPanel.removeAttribute('hidden');
+                }
+            });
+        });
+    }
+    
+    console.log('MARËIS script fully loaded');
+    
+});
+    </script>
+</body>
+</html>

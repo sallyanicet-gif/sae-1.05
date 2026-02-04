@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez MARËIS : formulaire de contact, demande d'adhésion, inscription bénévole. Association de protection marine en Guadeloupe.">
+    <title>Contact | MARËIS - Protection Marine en Guadeloupe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lien d'évitement pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="MARËIS - Retour à l'accueil">MARËIS</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="nos-actions.html">Nos actions</a></li>
+                <li><a href="informations.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-lang">
+                <a href="contact-en.html" lang="en" aria-label="Switch to English version">EN</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Activer le mode sombre" title="Changer de thème">
+                <span class="theme-icon-light" aria-hidden="true">🌙</span>
+                <span class="theme-icon-dark" aria-hidden="true">☀️</span>
+            </button>
+            <button class="nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content" role="main">
+
+    <!-- Hero Page -->
+    <section class="page-hero" aria-labelledby="page-title">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                    <ol>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+                <h1 id="page-title">Contactez-nous</h1>
+                <p class="page-hero-subtitle">Une question ? Envie de nous rejoindre ? Écrivez-nous !</p>
+            </div>
+        </div>
+        <div class="page-hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de contact -->
+    <section class="contact-section" aria-labelledby="contact-form-title">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <h2 id="contact-form-title">Envoyez-nous un message</h2>
+                    <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                    
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="nom">Nom complet <span class="required" aria-hidden="true">*</span></label>
+                            <input 
+                                type="text" 
+                                id="nom" 
+                                name="nom" 
+                                required 
+                                autocomplete="name"
+                                aria-required="true"
+                                placeholder="Votre nom et prénom"
+                            >
+                            <span class="form-hint">Exemple : Marie Dupont</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse email <span class="required" aria-hidden="true">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                autocomplete="email"
+                                aria-required="true"
+                                aria-describedby="email-hint"
+                                placeholder="votre@email.com"
+                            >
+                            <span class="form-hint" id="email-hint">Nous ne partagerons jamais votre email.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input 
+                                type="tel" 
+                                id="telephone" 
+                                name="telephone"
+                                autocomplete="tel"
+                                placeholder="0590 XX XX XX"
+                                aria-describedby="tel-hint"
+                            >
+                            <span class="form-hint" id="tel-hint">Optionnel - pour vous recontacter plus rapidement.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Sujet de votre message <span class="required" aria-hidden="true">*</span></label>
+                            <select id="sujet" name="sujet" required aria-required="true">
+                                <option value="">-- Choisissez un sujet --</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="benevole" id="benevole">Devenir bénévole</option>
+                                <option value="adhesion" id="adhesion">Adhérer à l'association</option>
+                                <option value="don" id="don">Faire un don</option>
+                                <option value="partenariat">Proposition de partenariat</option>
+                                <option value="intervention">Demande d'intervention scolaire</option>
+                                <option value="presse">Contact presse</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message <span class="required" aria-hidden="true">*</span></label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required
+                                aria-required="true"
+                                placeholder="Décrivez votre demande ou posez votre question..."
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="rgpd" 
+                                name="rgpd" 
+                                required
+                                aria-required="true"
+                            >
+                            <label for="rgpd">
+                                J'accepte que mes données soient traitées par MARËIS pour répondre à ma demande. 
+                                <span class="required" aria-hidden="true">*</span>
+                                <a href="#mentions" class="form-link">Voir les mentions légales</a>
+                            </label>
+                        </div>
+                        
+                        <p class="form-required-note"><span class="required" aria-hidden="true">*</span> Champs obligatoires</p>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Envoyer mon message
+                        </button>
+                    </form>
+                </div>
+                
+                <aside class="contact-info-sidebar">
+                    <div class="contact-card">
+                        <h3>Coordonnées</h3>
+                        <address>
+                            <p><strong>MARËIS</strong></p>
+                            <p>12 rue des Palétuviers</p>
+                            <p>97180 Sainte-Anne</p>
+                            <p>Guadeloupe</p>
+                        </address>
+                        <div class="contact-methods">
+                            <p>
+                                <span class="contact-icon" aria-hidden="true">📧</span>
+                                <a href="/cdn-cgi/l/email-protection#f0939f9e84919384b09d9182959983dd9183839fde9682"><span class="__cf_email__" data-cfemail="afccc0c1dbceccdbefc2ceddcac6dc82cedcdcc081c9dd">[email&#160;protected]</span></a>
+                            </p>
+                            <p>
+                                <span class="contact-icon" aria-hidden="true">📞</span>
+                                <a href="tel:+0590509510">0590509510</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Horaires</h3>
+                        <p>Mardi - Vendredi</p>
+                        <p><strong>9h00 - 12h00 / 14h00 - 17h00</strong></p>
+                        <p class="contact-note">Fermé le lundi et le week-end</p>
+                    </div>
+                    
+                    <div class="contact-card social-card">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                                Facebook
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                                Instagram
+                            </a>
+                            <a href="#" aria-label="YouTube" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/>
+                                </svg>
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mentions légales -->
+    <section id="mentions" class="legal-section" aria-labelledby="mentions-title">
+        <div class="container">
+            <div class="legal-content">
+                <h2 id="mentions-title">Mentions légales</h2>
+                
+                <article class="legal-block">
+                    <h3>Éditeur du site</h3>
+                    <p><strong>MARËIS</strong> - Association loi 1901</p>
+                    <p>Siège social : 12 rue des Palétuviers, 97180 Sainte-Anne, Guadeloupe</p>
+                    <p>Email : <a href="/cdn-cgi/l/email-protection#83e0ecedf7e2e0f7c3eee2f1e6eaf0aee2f0f0ecade5f1"><span class="__cf_email__" data-cfemail="5b3834352f3a382f1b363a293e3228763a282834753d29">[email&#160;protected]</span></a></p>
+                    <p>Directrice de publication : Marie-Line Dubois, Présidente</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Hébergement</h3>
+                    <p>Ce site est hébergé par GitHub Pages</p>
+                    <p>GitHub, Inc. - 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Propriété intellectuelle</h3>
+                    <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos) est la propriété exclusive de MARËIS ou de ses partenaires. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable est interdite.</p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Protection des données personnelles</h3>
+                    <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.</p>
+                    <p>Les données collectées via le formulaire de contact sont uniquement utilisées pour répondre à vos demandes et ne sont jamais transmises à des tiers.</p>
+                    <p>Pour exercer vos droits, contactez-nous à : <a href="/cdn-cgi/l/email-protection#05666a6b7164667145686477606c76286476766a2b6377"><span class="__cf_email__" data-cfemail="96f5f9f8e2f7f5e2d6fbf7e4f3ffe5bbf7e5e5f9b8f0e4">[email&#160;protected]</span></a></p>
+                </article>
+                
+                <article class="legal-block">
+                    <h3>Cookies</h3>
+                    <p>Ce site n'utilise pas de cookies de tracking ou de publicité. Seuls des cookies techniques essentiels au fonctionnement du site peuvent être utilisés.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Crédits -->
+    <section class="credits-section" aria-labelledby="credits-title">
+        <div class="container">
+            <div class="credits-content">
+                <h2 id="credits-title">Crédits</h2>
+                
+                <div class="credits-grid">
+                    <article class="credit-block">
+                        <h3>Conception et développement</h3>
+                        <p>Site réalisé dans le cadre de la SAE 1.05 - BUT MMI</p>
+                        <p>Université des Antilles - Pôle Guadeloupe</p>
+                        <p>Année 2024-2025</p>
+                    </article>
+                    
+                    <article class="credit-block">
+                        <h3>Photographies</h3>
+                        <p>Images libres de droits issues de :</p>
+                        <ul>
+                            <li>Unsplash.com</li>
+                            <li>Pexels.com</li>
+                            <li>Archives MARËIS (fictives)</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="credit-block">
+                        <h3>Typographies</h3>
+                        <p>Polices Google Fonts :</p>
+                        <ul>
+                            <li>Playfair Display - Titres</li>
+                            <li>Raleway - Corps de texte</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="credit-block">
+                        <h3>Technologies utilisées</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 (Flexbox, Grid, Variables)</li>
+                            <li>JavaScript vanilla</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,60 C360,0 1080,120 1440,60 L1440,0 L0,0 Z" fill="var(--color-sand)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>MARËIS</h3>
+                    <p>Association environnementale guadeloupéenne pour la protection marine.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Suivez-nous sur Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Regardez nos vidéos sur YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="nos-actions.html">Nos actions</a></li>
+                        <li><a href="informations.html">Infos pratiques</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Agir</h4>
+                    <ul>
+                        <li><a href="contact.html#benevole">Devenir bénévole</a></li>
+                        <li><a href="contact.html#adhesion">Adhérer</a></li>
+                        <li><a href="contact.html#don">Faire un don</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><span aria-hidden="true">📍</span> Guadeloupe, Antilles françaises</p>
+                    <p><span aria-hidden="true">📧</span> <a href="mailto:contact@mareis.gp">contact@mareis.gp</a></p>
+                    <p><span aria-hidden="true">📞</span> <a href="tel:+0590509510">0590509510</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MARËIS - Tous droits réservés</p>
+                <div class="footer-legal">
+                    <a href="contact.html#mentions">Mentions légales</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="contact-en.html" lang="en">English</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+/* ===================================
+   MARËIS - JavaScript
+   Theme persistence & Navigation
+   =================================== */
+
+// ===================================
+// IMMEDIATELY: Apply theme BEFORE DOM loads (no flash)
+// ===================================
+(function() {
+    // Get saved theme from BOTH possible keys (for compatibility)
+    const savedTheme = localStorage.getItem('mareis-theme') || localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const themeToApply = savedTheme || (prefersDark ? 'dark' : 'light');
+    
+    // Apply theme immediately to prevent flash
+    document.documentElement.setAttribute('data-theme', themeToApply);
+    
+    // Save with both keys for compatibility
+    localStorage.setItem('mareis-theme', themeToApply);
+    localStorage.setItem('theme', themeToApply);
+})();
+
+// ===================================
+// Wait for DOM
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+    
+    console.log('DOM loaded - MARËIS script starting');
+    
+    // ===================================
+    // Theme Toggle - Dark/Light Mode
+    // ===================================
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    console.log('Theme toggle button found:', !!themeToggle);
+    
+    if (themeToggle) {
+        // Update button label based on current theme
+        const updateThemeLabel = function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const isEnglish = document.documentElement.lang === 'en';
+            
+            if (currentTheme === 'dark') {
+                themeToggle.setAttribute('aria-label', isEnglish ? 'Switch to light mode' : 'Activer le mode clair');
+            } else {
+                themeToggle.setAttribute('aria-label', isEnglish ? 'Switch to dark mode' : 'Activer le mode sombre');
+            }
+        };
+        
+        // Set initial label
+        updateThemeLabel();
+        
+        // Handle click
+        themeToggle.addEventListener('click', function(e) {
+            console.log('Theme toggle clicked!');
+            
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            console.log('Changing theme from', currentTheme, 'to', newTheme);
+            
+            // Apply new theme
+            document.documentElement.setAttribute('data-theme', newTheme);
+            
+            // Save to localStorage with BOTH keys
+            localStorage.setItem('mareis-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update label
+            updateThemeLabel();
+            
+            console.log('Theme changed successfully to:', newTheme);
+        });
+        
+        console.log('Theme toggle event listener attached');
+    } else {
+        console.error('Theme toggle button NOT FOUND!');
+    }
+    
+    // ===================================
+    // Active Navigation Link
+    // ===================================
+    const setActiveNavLink = function() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        console.log('Current page:', currentPage);
+        
+        navLinks.forEach(link => {
+            // Remove existing active class
+            link.classList.remove('active');
+            link.removeAttribute('aria-current');
+            
+            // Get the href filename
+            const linkPage = link.getAttribute('href').split('/').pop();
+            
+            // Check if this link matches current page
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+                console.log('Active link set:', linkPage);
+            }
+        });
+    };
+    
+    // Set active link on page load
+    setActiveNavLink();
+    
+    // ===================================
+    // Mobile Navigation Toggle
+    // ===================================
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            
+            const isActive = navLinks.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isActive);
+            
+            // Burger animation
+            const spans = navToggle.querySelectorAll('span');
+            spans.forEach((span, index) => {
+                if (isActive) {
+                    if (index === 0) span.style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    if (index === 1) span.style.opacity = '0';
+                    if (index === 2) span.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                } else {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                }
+            });
+        });
+        
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                
+                const spans = navToggle.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+            });
+        });
+    }
+    
+    // ===================================
+    // Header Shadow on Scroll
+    // ===================================
+    const header = document.querySelector('.header');
+    
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(10, 61, 92, 0.15)';
+            } else {
+                header.style.boxShadow = '0 4px 20px rgba(10, 61, 92, 0.1)';
+            }
+        });
+    }
+    
+    // ===================================
+    // Scroll Animations (Intersection Observer)
+    // ===================================
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.action-card, .stat-item, .join-card, .news-card, .about-content, .about-image, .value-card, .context-card, .team-card, .program-card, .event-card, .hours-card, .pricing-card, .faq-item, .contact-card');
+        
+        if (elements.length === 0) return;
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        elements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    };
+    
+    animateOnScroll();
+    
+    // ===================================
+    // Number Counter Animation
+    // ===================================
+    const animateNumbers = function() {
+        const numbers = document.querySelectorAll('.stat-number');
+        
+        if (numbers.length === 0) return;
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalNumber = parseInt(target.textContent.replace(/\D/g, ''));
+                    const suffix = target.textContent.replace(/[0-9]/g, '');
+                    let current = 0;
+                    const increment = finalNumber / 50;
+                    const stepTime = 40;
+                    
+                    const counter = setInterval(() => {
+                        current += increment;
+                        if (current >= finalNumber) {
+                            target.textContent = finalNumber + suffix;
+                            clearInterval(counter);
+                        } else {
+                            target.textContent = Math.floor(current) + suffix;
+                        }
+                    }, stepTime);
+                    
+                    observer.unobserve(target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        numbers.forEach(num => observer.observe(num));
+    };
+    
+    animateNumbers();
+    
+    // ===================================
+    // Smooth Scroll for Anchors
+    // ===================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // ===================================
+    // Hero Parallax Effect
+    // ===================================
+    const hero = document.querySelector('.hero');
+    
+    if (hero) {
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroContent = document.querySelector('.hero-content');
+            
+            if (heroContent && scrolled < window.innerHeight) {
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                heroContent.style.opacity = 1 - (scrolled / (window.innerHeight * 0.8));
+            }
+        });
+    }
+    
+    // ===================================
+    // Contact Form Handling
+    // ===================================
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('error');
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            // Email validation
+            const emailField = this.querySelector('input[type="email"]');
+            if (emailField && emailField.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailField.value)) {
+                    isValid = false;
+                    emailField.classList.add('error');
+                }
+            }
+            
+            if (isValid) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                const isEnglish = document.documentElement.lang === 'en';
+                
+                submitBtn.textContent = isEnglish ? 'Sending...' : 'Envoi en cours...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    const message = isEnglish 
+                        ? 'Thank you for your message! We will respond as soon as possible.'
+                        : 'Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.';
+                    alert(message);
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 1500);
+            }
+        });
+    }
+    
+    // ===================================
+    // FAQ Accordion (if present)
+    // ===================================
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', function() {
+                const isOpen = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't open
+                if (!isOpen) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+    
+    // ===================================
+    // Tabs Navigation (Nos Actions page)
+    // ===================================
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    
+    if (tabButtons.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                // Update buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+                
+                // Update panels
+                tabPanels.forEach(panel => {
+                    panel.classList.remove('active');
+                    panel.setAttribute('hidden', '');
+                });
+                
+                const targetPanel = document.getElementById(targetTab);
+                if (targetPanel) {
+                    targetPanel.classList.add('active');
+                    targetPanel.removeAttribute('hidden');
+                }
+            });
+        });
+    }
+    
+    console.log('MARËIS script fully loaded');
+    
+});
+    </script>
+</body>
+</html>
